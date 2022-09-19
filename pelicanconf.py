@@ -21,9 +21,10 @@ LINKS = (('GitHub', 'https://github.com/sturdy-robot'),
          ('Openfoot Manager', 'https://github.com/sturdy-robot/openfootmanager'),
         )
 
+GITHUB_URL = 'https://github.com/sturdy-robot'
+
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 

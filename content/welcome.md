@@ -1,6 +1,6 @@
 Title: Welcome to Sturdy Robot's website!
 Date: 2022-09-19 05:38
-Category: Projects, Python, Introduction
+Category: Home
 
 Hello, world!
 
