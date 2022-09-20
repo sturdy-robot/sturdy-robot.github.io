@@ -162,3 +162,4 @@ cython_debug/
 # VSCode-specific options
 .vscode/
 .vs/
+output/**
