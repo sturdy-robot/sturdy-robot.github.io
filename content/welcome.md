@@ -1,6 +1,11 @@
 Title: Welcome to Sturdy Robot's website!
 Date: 2022-09-19 05:38
+Modified: 2022-11-08 09:30
 Category: Home
+Tags: welcome, sturdyrobot, projects
+Slug: welcome
+Authors: Sturdy Robot
+Summary: Welcome to my website
 
 Hello, world!
 
