@@ -15,6 +15,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
 # Blogroll
 LINKS = (('GitHub', 'https://github.com/sturdy-robot'),
          ('eSports Manager', 'https://github.com/sturdy-robot/esports-manager'),
