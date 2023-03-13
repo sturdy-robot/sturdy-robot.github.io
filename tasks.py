@@ -16,19 +16,16 @@ from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 OPEN_BROWSER_ON_SERVE = True
 SETTINGS_FILE_BASE = 'pelicanconf.py'
 SETTINGS = {}
-SETTINGS.update(DEFAULT_CONFIG)
+SETTINGS |= DEFAULT_CONFIG
 LOCAL_SETTINGS = get_settings_from_file(SETTINGS_FILE_BASE)
 SETTINGS.update(LOCAL_SETTINGS)
 
 CONFIG = {
     'settings_base': SETTINGS_FILE_BASE,
     'settings_publish': 'publishconf.py',
-    # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
-    # Github Pages configuration
     'github_pages_branch': 'gh-pages',
-    'commit_message': "'Publish site on {}'".format(datetime.date.today().isoformat()),
-    # Host and port for `serve`
+    'commit_message': f"'Publish site on {datetime.date.today().isoformat()}'",
     'host': 'localhost',
     'port': 8000,
 }
@@ -144,5 +141,5 @@ def gh_pages(c):
           '{deploy_path} -p'.format(**CONFIG))
 
 def pelican_run(cmd):
-    cmd += ' ' + program.core.remainder  # allows to pass-through args to pelican
+    cmd += f' {program.core.remainder}'
     pelican_main(shlex.split(cmd))
